@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>InBox | App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="./src/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <!--    HEADER    -->
+      <header class="row">
+        <div class="col-8 col-md-6">
+            <h1>InBox</h1><span> Read your mails...</span>
+        </div>
+        <div class="col-4 col-md-6">
+            <div class="member right">
+                <span class="name">Emilie N.</span>
+                <span class="img"><img src="http://resize2-elle.ladmedia.fr/r/700,,forcex/img/var/plain_site/storage/images/beaute/cheveux/coupe-de-cheveux/cheveux-boucles/cheveux-boucles-metisse2/56048993-1-fre-FR/Cheveux-boucles-metisse.jpg" alt="Emilie" width="40px"></span>
+            </div>
+        </div>
+      </header>
+        <!--    NAVBAR    -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <span class="follower"></span>
+              <li class="nav-item active">
+                <a class="nav-link unread" href="/inbox.html">Inbox</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Request</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Archive</a>
+              </li>
+            </ul>
+            <a class="btn btn-outline-danger my-2 my-sm-0 right trash" href="#" title="Trash"><i class="fas fa-trash-alt"></i> <span class="text">Trash</span></a>
+          </div>
+        </nav>
+        <!--    CONTAINER    -->
+        <div class="justify-content-md-center align-items-center" id="box-inbox">
+            <div class="col-md-auto">
+               <!-- LIST -->
+                <table class="table list" width="100%">
+                    <thead>
+                        <tr>
+                          <th scope="col" colspan="2">Name</th>
+                          <th scope="col">Last message</th>
+                          <th scope="col">Date</th>
+                          <th scope="col" width="10%">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="unread">
+                          <td class="img"><img src="https://icash.ca/images/portraits/port-250.png" alt="Mark"></td>
+                          <td class="name" data-id="123">Mark</td>
+                          <td class="msg">No what I mean is ...</td>
+                          <td class="date" scope="row">30 min ago</td>
+                          <td><a class="right actions" href="http://just-bloody.com/inbox/inbox#" title="Actions"><i class="fas fa-ellipsis-v"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="img"><img src="https://icash.ca/images/portraits/port-15.png" alt="Jacob"></td>
+                          <td class="name" data-id="124">Jacob</td>
+                          <td class="msg">No way 😂</td>
+                          <td class="date" scope="row">3 hours ago</td>
+                          <td><a class="right actions" href="http://just-bloody.com/inbox/inbox#" title="Actions"><i class="fas fa-ellipsis-v"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="img"><img src="http://www.one2onephotography.ca/image/portrait/men/men-images-1.jpg" alt="Larry"></td>
+                          <td class="name" data-id="125">Larry</td>
+                          <td class="msg">See you soon!</td>
+                          <td class="date" scope="row">Yesterday</td>
+                          <td><a class="right actions" href="http://just-bloody.com/inbox/inbox#" title="Actions"><i class="fas fa-ellipsis-v"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="img"><img src="https://icash.ca/images/portraits/port-11.png" alt="Patricia"></td>
+                          <td class="name" data-id="126">Patricia</td>
+                          <td class="msg">Ok I'll see with him thx.</td>
+                          <td class="date" scope="row">Monday</td>
+                          <td><a class="right actions" href="http://just-bloody.com/inbox/inbox#" title="Actions"><i class="fas fa-ellipsis-v"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx2-P3tv3y1-AIh688Bdh6ZO-4hXaADDU5TOaMDhiEIZqehWQu" alt="Annie"></td>
+                          <td class="name" data-id="127">Annie</td>
+                          <td class="msg">Nice 😃</td>
+                          <td class="date" scope="row">Sunday</td>
+                          <td><a class="right actions" href="http://just-bloody.com/inbox/inbox#" title="Actions"><i class="fas fa-ellipsis-v"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- MESSAGES -->
+                <table class="table messages">
+                    <thead>
+                        <tr class="contact_info">
+                          <th scope="col" class="back" width="2%"><i class="fas fa-chevron-left" title="Back"></i></th>
+                          <th scope="col" class="img"></th>
+                          <th scope="col" class="name"></th>
+                          <th scope="col"></th>
+                          <th scope="col" width="1%"> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="user">
+                           <td></td>
+                           <td colspan="3">
+                                <div class="bubble">
+                                    <span class="time">10:30</span>
+                                    <p class="msg">Hello! How are you?</p>
+                               </div>
+                           </td>
+                           <td class="prof">
+                               <div class="arrow"></div>
+                               <div class="img"><img src="http://resize2-elle.ladmedia.fr/r/700,,forcex/img/var/plain_site/storage/images/beaute/cheveux/coupe-de-cheveux/cheveux-boucles/cheveux-boucles-metisse2/56048993-1-fre-FR/Cheveux-boucles-metisse.jpg" alt="Emilie"></div>
+                            </td>
+                        </tr>
+                        <tr class="contact last">
+                           <td class="prof">
+                               <div class="arrow"></div>
+                               <div class="img"></div>
+                            </td>
+                           <td colspan="3">
+                                <div class="bubble">
+                                    <span class="time">10:42</span>
+                                    <p class="msg">I'm fine thx! And you?</p>
+                                </div>
+                           </td>
+                           <td></td>
+                        </tr>
+                        <tr class="writing hidden text-right"><td colspan="4">Typing...</td><td></td></tr>
+                        <!-- Write -->
+                        <tr class="write">
+                            <td class="img" colspan="1">
+                                <i class="far fa-smile" title="Emoji"></i> <i id="add" class="fas fa-paperclip" title="Add"></i>
+                            </td>
+                            <td colspan="4">
+                                <form name="sendMessage" method="POST" action="">
+                                    <div class="col-md-10 alpha omega left">
+                                        <textarea class="form-control" name="messageWrite" id="message_write" rows="1"></textarea>
+                                    </div>
+                                    <div class="col-md-2 omega left">
+                                        <button type="button" id="send" class="btn btn-outline-info" value="Send">Send</button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="popup hidden">
+                    <div class="elem"><i class="fas fa-images"></i> Images</div>
+                    <div class="elem"><i class="far fa-file-alt"></i> Files</div>
+                    <div class="elem"><i class="fas fa-microphone"></i> Audio</div>
+                    <div class="elem"><i class="fas fa-user"></i> Contact</div>
+                </div>
+            </div>
+        </div>
+      <!--    FOOTER    -->
+      <footer class="text-center" style="position: absolute; bottom: 0; left: 0; width: 100%; font-size: 12px;">
+        &copy; 2018 InBox app
+      </footer>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

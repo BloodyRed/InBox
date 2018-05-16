@@ -144,7 +144,7 @@ var answer = function(e) {
     var dt = new Date();
     var time = dt.getHours() + ":" + dt.getMinutes();
     var img = $("tr.contact .img").html();
-    var template = '<tr class="contact add"><td class="prof"><div class="arrow"></div><div class="img"></div></td><td colspan="3"><div class="bubble"><span class="time">10:42</span><p class="msg">When do you want meet? I will be so happy to see you again :D <br>Stephanie is very good on design and front-end stuff :p</p></div></td><td></td></tr>';
+    var template = '<tr class="contact add"><td class="prof"><div class="arrow"></div><div class="img"></div></td><td colspan="3"><div class="bubble"><span class="time">10:42</span><p class="msg">When do you want meet? I will be so happy to see you again :D <br>Stephanie is very good in design and front-end stuff :p</p></div></td><td></td></tr>';
     var lastElem = $("#box-inbox table.messages tbody tr.last");
     lastElem.after(template);
     /* Clear all of the last */

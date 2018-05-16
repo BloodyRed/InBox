@@ -53,11 +53,13 @@ $(function(){
     $("#box-inbox table.list tr").on('click', function() {
         var img = $(this).children('.img').html();
         var name = $(this).children('.name').html();
+        var msg = $(this).children('.msg').html();
         var id = $(this).children('.name').data('id');
         $(this).parents('.table').css("margin-left","-102%");
         /* Put informations on the new table */
         $('.messages th.img, .contact .img').html(img);
         $('.messages th.name').html(name).attr('data-id', id);
+        $('.contact .msg').html(msg);
     });
     $("#box-inbox table.messages tr .back").on('click', function() {
         $('.table.list').css("margin-left","0%");
